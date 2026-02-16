@@ -30,8 +30,10 @@ pipeline {
 
         stage('Web') {
             steps {
-                dir('web') {
-                    sh 'echo teste'
+                dir('mobile') {
+                    sh 'npm install'
+                    sh 'npx cypress install --force'
+                    sh 'npx cypress run'
                 }
             }
         }

@@ -30,7 +30,7 @@ pipeline {
 
         stage('Web') {
             steps {
-                dir('mobile') {
+                dir('web') {
                     sh 'npm install'
                     sh 'npx cypress install --force'
                     sh 'npx cypress run --browser chrome --record --key d1373bed-3211-42a1-95bc-98cdde703457'

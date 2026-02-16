@@ -1,0 +1,53 @@
+{
+  "sucesso": {
+    "data": "12/02/2026",
+    "hora": "10:00",
+    "dia": "12",
+    "profissional": {
+      "nome": "Tina",
+      "matricula": 1003
+    },
+    "servico": {
+      "codigo": 3,
+      "descricao": "Combo"
+    },
+    "usuario": {
+      "nome": "Rafael Toppis",
+      "email": "rafa@gmail.com"
+    }
+  },
+  "conflito": {
+    "data": "12/02/2026",
+    "hora": "14:00",
+    "dia": "12",
+    "profissional": {
+      "nome": "Jimi",
+      "matricula": 1006
+    },
+    "servico": {
+      "codigo": 1,
+      "descricao": "Corte"
+    },
+    "usuario": {
+      "nome": "Oscar Alho",
+      "email": "oscar@alho.com"
+    }
+  },
+  "duplicado": {
+    "data": "12/02/2026",
+    "hora": "14:00",
+    "dia": "12",
+    "profissional": {
+      "nome": "Kurt",
+      "matricula": 1008
+    },
+    "servico": {
+      "codigo": 1,
+      "descricao": "Corte"
+    },
+    "usuario": {
+      "nome": "Jalim Habei",
+      "email": "Jalim@Habei.com"
+    }
+  }
+}

@@ -17,10 +17,10 @@ pipeline {
             dir('mobile'){
                 sh 'echo teste'
             }
-        }
-    }   stage('Testes no Frontend(Web)'){
+        }stage('Testes no Frontend(Web)'){
             dir('web'){
                 sh 'echo teste'
             }
         }
+    }   
 }

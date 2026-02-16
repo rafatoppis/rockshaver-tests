@@ -2,10 +2,12 @@ pipeline {
     agent {
         docker { image 'cypress/browsers:latest' }
     }
+
     stages {
+
         stage('Testes de Backend') {
             steps {
-                dir('api'){
+                dir('api') {
                     sh 'npm install'
                     sh 'npx cypress install --force'
                     sh 'npx cypress run'
@@ -13,19 +15,21 @@ pipeline {
             }
         }
 
-        stage('Testes no Frontend(Mobile)'){
-            steps{
-                dir('mobile'){
-                    sh 'echo teste'
-                }
-            }
-
-        }stage('Testes no Frontend(Web)'){
-            steps{
-                dir('web'){
+        stage('Testes no Frontend (Mobile)') {
+            steps {
+                dir('mobile') {
                     sh 'echo teste'
                 }
             }
         }
-    }   
+
+        stage('Testes no Frontend (Web)') {
+            steps {
+                dir('web') {
+                    sh 'echo teste'
+                }
+            }
+        }
+
+    }
 }

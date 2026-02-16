@@ -3,6 +3,7 @@ const { defineConfig } = require('cypress');
 const { MongoClient } = require('mongodb');
 
 module.exports = defineConfig({
+  projectId: "wh92as",
   env:{
     baseApi: process.env.API_URL
   },

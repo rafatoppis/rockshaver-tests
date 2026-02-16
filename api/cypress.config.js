@@ -3,7 +3,7 @@ require('dotenv').config()
 
 
 module.exports = {
-
+  projectId: "nje3nj",
   env: {
     
   },

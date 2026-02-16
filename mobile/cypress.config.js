@@ -4,6 +4,7 @@ const { defineConfig } = require('cypress');
 const { MongoClient } = require('mongodb');
 
 module.exports = {
+  projectId: "o3bmkt",
   env: {
     baseApi: process.env.API_URL
   },

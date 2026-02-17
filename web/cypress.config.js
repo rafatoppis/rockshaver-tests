@@ -12,6 +12,7 @@ module.exports = defineConfig({
     baseUrl: process.env.WEB_URL,
     viewportWidth: 1920,
     viewportHeight: 1080,
+    video: true,
 
 
     async setupNodeEvents(on, config) {

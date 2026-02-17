@@ -9,6 +9,7 @@ module.exports = {
     baseApi: process.env.API_URL
   },
   e2e: {
+    video: true,  //habilita video do teste no tesults
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
